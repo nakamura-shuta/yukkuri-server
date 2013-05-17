@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  div(Align="center")
+    h1= title
+    img(src="/images/yukkuri.jpeg")
+    br
+    p ※20文字まで
+    p ※AquesTalkが評価版だと「ナ行、マ行」の音韻がすべて「ヌ」になる制限あり
+    p ※漢字とか記号いれると再生されない
+    p ※それ以外にもエラー処理とかいろいろあるけど気にしない
+    input#words(type="text", name="words",maxlength=20)
+    button#say ゆっくり
+    br
+    textarea#chatlog(cols="35",rows="20",readonly="true")
+    script(src="/javascripts/yukkuri.js")

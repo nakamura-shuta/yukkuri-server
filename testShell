@@ -1,0 +1,11 @@
+#!/bin/sh
+
+fname=$1
+
+body=""
+while read i ; do
+    body=$i
+done
+
+echo "test shell."
+echo $fname
